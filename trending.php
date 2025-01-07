@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trending - Xbox Cloud Gaming</title>
-    <link rel="stylesheet" href="assets/trending.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">Undiknas Hero</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="specialoffer.html">Special Offers</a></li>
-        <li><a href="trending.html">Trending</a></li>
-        <li><a href="newrelease.html">New Releases</a></li>
-      </ul>
-      <button class="cart-button" onclick="location.href='checkout.html'">Cart (<span id="cart-count">0</span>)</button>
-    </nav>
-
+<?php 'include/header.php'; ?>
+<link rel="stylesheet" href="assets/trending.css">
     <header class="trending-header">
       <h1>Trending Games</h1>
       <p>Discover the most popular games that players are enjoying right now!</p>
