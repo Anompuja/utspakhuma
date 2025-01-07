@@ -1,4 +1,4 @@
-<?php 'include/header.php'; ?>
+<?php  include 'include/header.php'; ?>
     <link rel="stylesheet" href="assets/style.css" />
     <section class="slider">
       <div class="slides">
