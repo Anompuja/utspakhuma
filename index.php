@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xbox Gaming Layout with Slider</title>
+<?php 'include/header.php'; ?>
     <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">Undiknas Hero</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="specialoffer.html">Special Offers</a></li>
-        <li><a href="trending.html">Trending</a></li>
-        <li><a href="newrelease.html">New Releases</a></li>
-      </ul>
-    </nav>
-
     <section class="slider">
       <div class="slides">
         <img src="img/Black Myth Indra.jpeg" alt="Game 1" />

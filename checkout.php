@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout</title>
+<?php 'include/header.php'; ?>
     <link rel="stylesheet" href="assets/checkout.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">Undiknas Hero</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="specialoffer.html">Special Offers</a></li>
-        <li><a href="trending.html">Trending</a></li>
-        <li><a href="newrelease.html">New Releases</a></li>
-      </ul>
-    </nav>
-
     <section class="checkout-section">
       <h2>Your Cart</h2>
       <ul id="cart-items"></ul>
