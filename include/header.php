@@ -15,7 +15,7 @@
             <li><a href="/utspakhuma/trending.php">Trending</a></li>
             <li><a href="/utspakhuma/newrelease.php">New Releases</a></li>
         </ul>
-        <button class="cart-button" onclick="location.href='checkout.html'">Cart (<span
+        <button class="cart-button" onclick="location.href='/utspakhuma/checkout.php'">Cart (<span
                 id="cart-count">0</span>)</button>
     </nav>
 </head>

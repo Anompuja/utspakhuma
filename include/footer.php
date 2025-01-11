@@ -7,21 +7,21 @@
             <div class="socials">
                 <a
                     href="https://media.istockphoto.com/id/607884310/id/foto/nilai-sempurna-100-persen.jpg?s=612x612&w=0&k=20&c=pm4YG0KPkafG1-5c0hsJuVoUvkWNRvf5a_oGHnpH9RA="><img
-                        src="twitter-icon.png" alt="Twitter" width="50" /></a>
+                        src="/utspakhuma/img/twitter-icon.png" alt="Twitter" width="50" /></a>
                 <a href="https://www.instagram.com/p/DCLU7KEyEAf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                        src="instagram-icon.png" alt="Instagram" width="50" /></a>
-                <a href="https://youtu.be/ZHgyQGoeaB0?si=bZATfUxYvfVBj2xM"><img src="youtube-icon.png" alt="YouTube"
-                        width="50pc" /></a>
+                        src="/utspakhuma/img/instagram-icon.png" alt="Instagram" width="50" /></a>
+                <a href="https://youtu.be/ZHgyQGoeaB0?si=bZATfUxYvfVBj2xM"><img src="/utspakhuma/img/youtube-icon.png"
+                        alt="YouTube" width="50pc" /></a>
             </div>
         </div>
 
         <div class="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialoffer.html">Special Offers</a></li>
-                <li><a href="trending.html">Trending</a></li>
-                <li><a href="newrelease.html">New Releases</a></li>
+                <li><a href="/utspakhuma/index.php">Home</a></li>
+                <li><a href="/utspakhuma/specialoffer.php">Special Offers</a></li>
+                <li><a href="/utspakhuma/trending.php">Trending</a></li>
+                <li><a href="/utspakhuma/newrelease.php">New Releases</a></li>
             </ul>
         </div>
 
