@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => {
       const title = button.getAttribute("data-title");
       const price = button.getAttribute("data-price");
+      const gameId = button.getAttribute("data-id");
 
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ title, price });
+      cart.push({ title, price, gameId });
       localStorage.setItem("cart", JSON.stringify(cart));
 
       updateCartCount();

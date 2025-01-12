@@ -1,39 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const countdownElements = document.querySelectorAll(".countdown");
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
-  const cartCountElement = document.getElementById("cart-count");
-
-  updateCartCount();
-
-  function updateCartCount() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cartCountElement.textContent = cart.length;
-  }
 
   addToCartButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const title = button.getAttribute("data-title");
       const price = button.getAttribute("data-price");
+      const gameId = button.getAttribute("data-id");
+      const quantity = 1;
 
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ title, price });
-      localStorage.setItem("cart", JSON.stringify(cart));
+      // Mengirim request AJAX untuk memeriksa stok
+      fetch("check_stock.php", {
+        method: "POST",
+        body: new URLSearchParams({
+          game_id: gameId,
+          quantity: quantity,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            // Jika stok tersedia, tambahkan ke keranjang
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ title, price, gameId, quantity });
+            localStorage.setItem("cart", JSON.stringify(cart));
 
-      updateCartCount();
-
-      if (Notification.permission === "granted") {
-        new Notification("Added to Cart", {
-          body: `${title} has been added to your cart.`,
-        });
-      } else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then((permission) => {
-          if (permission === "granted") {
-            new Notification("Added to Cart", {
-              body: `${title} has been added to your cart.`,
-            });
+            alert(`${title} telah ditambahkan ke keranjang.`);
+          } else {
+            // Jika stok habis, tampilkan notifikasi
+            alert(`Stok untuk ${title} tidak mencukupi.`);
           }
         });
-      }
     });
   });
 });
