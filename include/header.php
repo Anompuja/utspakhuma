@@ -13,10 +13,10 @@
         </div>
         <div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialoffer.html">Special Offers</a></li>
-                <li><a href="trending.html">Trending</a></li>
-                <li><a href="newrelease.html">New Releases</a></li>
+                <li></li><a href="/utspakhuma/index.php">Home</a></li>
+                <li><a href="/utspakhuma/specialoffer.php">Special Offers</a></li>
+                <li><a href="/utspakhuma/trending.php">Trending</a></li>
+                <li><a href="/utspakhuma/newrelease.php">New Releases</a></li>
             </ul>
         </div>
         </div>
