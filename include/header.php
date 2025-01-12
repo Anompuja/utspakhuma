@@ -6,7 +6,10 @@
   
   <body>
     <nav>
-      <div class="logo">Undiknas Hero</div>
+      <div class="logo">
+        <img src="img/UGC.png" alt="">
+        
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="specialoffer.html">Special Offers</a></li>
