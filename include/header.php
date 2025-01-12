@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Releases</title>
-    <link rel="stylesheet" href="new-releases.css" />
-
+    <title>Xbox Gaming Layout with Slider</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  
+  <body>
     <nav>
-        <div class="logo">Undiknas Hero</div>
-        <ul class="nav-links">
-            <li><a href="/utspakhuma/index.php">Home</a></li>
-            <li><a href="/utspakhuma/specialoffer.php">Special Offers</a></li>
-            <li><a href="/utspakhuma/trending.php">Trending</a></li>
-            <li><a href="/utspakhuma/newrelease.php">New Releases</a></li>
+        <div class="logo">
+            <img src="img/UGC.png" alt="logo" style="width: 150; padding-left: 30px;">
+        </div>
+        <ul class="nav-links" style="margin-right: 30px; display: flex; font-weight: bold;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="specialoffer.html">Special Offers</a></li>
+            <li><a href="trending.html">Trending</a></li>
+         <li><a href="newrelease.html">New Releases</a></li>
         </ul>
-        <button class="cart-button" onclick="location.href='checkout.html'">Cart (<span
-                id="cart-count">0</span>)</button>
+        <div class="profile">
+            <a href="login.html">
+                <img src="img/Profile.png" alt="Profile Icon" style="cursor: pointer; width: 44;">
+            </a>
+            
+        </div>
     </nav>
-</head>
-
-</html>
+  </head>

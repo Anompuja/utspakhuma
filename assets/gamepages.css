@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.gamepages-header {
+    text-align: center;
+    padding: 2em;
+  }
+  
+.gamepages-header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+.gamepages-header p {
+    font-size: 1.2em;
+    color: #bbb;
+  }
+  
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hub-link {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:"showcase info"
+    "thumbnail info"
+    "purchase info"
+    ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+}
+
+.game-showcase {
+    grid-area: showcase;
+    gap: 1rem;
+    margin: 0rem 1rem 0rem;
+    background-color: #66b3ff;
+}
+
+.main-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game-info {
+    grid-area: info;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.game-description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.info-grid {
+    grid-area: info;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.info-label {
+    color: #888;
+}
+
+.thumbnail-gallery {
+    grid-area: thumbnail;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.purchase-container {
+    grid-area: purchase;
+    display: grid;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+}
+
+.game-title {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.game-subtitle {
+    color: #8f98a0;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.purchase-row {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-button {
+    background-color: #00a6ed;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.discount-badge {
+    background-color: #4c6b22;
+    color: #a4d007;
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.price {
+    color: #738895;
+    font-size: 14px;
+}
+
+.final-price {
+    color: white;
+    font-size: 14px;
+}
+
+.buy-button {
+    background: linear-gradient(to right, #75b022, #588a1b);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.buy-button:hover {
+    background: linear-gradient(to right, #8acc27, #6aa320);
+}

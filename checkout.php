@@ -1,5 +1,4 @@
 <?php  include 'include/header.php'; ?>
-
 <body>
     <link rel="stylesheet" href="utspakhuma/assets/checkout.css" />
     <section class="checkout-section">
