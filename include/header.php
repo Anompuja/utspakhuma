@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xbox Gaming Layout with Slider</title>
+    <title>Undiknas Gaming Center</title>
     <link rel="stylesheet" href="header.css" />
 
 <body>
@@ -27,7 +27,7 @@
                         </style></span>
             </div>
             <div class="profile">
-                <a href="login.html">
+                <a href="/utspakhuma/register.php">
                     <img src="img/Profile.png" alt="Profile Icon" style="cursor: pointer; width: 44;">
                 </a>
             </div>
