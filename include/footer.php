@@ -1,34 +1,42 @@
-<footer>
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h2>About Undiknas Hero</h2>
-        <p>Experience your favorite games on the cloud. Play anytime, anywhere, with no downloads or installation required!</p>
-        <div class="socials">
-          <a href="https://media.istockphoto.com/id/607884310/id/foto/nilai-sempurna-100-persen.jpg?s=612x612&w=0&k=20&c=pm4YG0KPkafG1-5c0hsJuVoUvkWNRvf5a_oGHnpH9RA="><img src="twitter-icon.png" alt="Twitter" width="50"/></a>
-          <a href="https://www.instagram.com/p/DCLU7KEyEAf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="instagram-icon.png" alt="Instagram" width="50" /></a>
-          <a href="https://youtu.be/ZHgyQGoeaB0?si=bZATfUxYvfVBj2xM"><img src="youtube-icon.png" alt="YouTube" width="50pc" /></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="ugc-logo">
+                    <img src="img/UGC.png" alt="logo bawah" style="width: 600; ">
+                </div>
+                <p class="follow-us">FOLLOW US</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/puredhegas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/Instagram.png" alt="ig" class="social-icon instagram-icon"></a>
+                    <a href="https://youtu.be/k0ubS6BhHu4?si=tWpjrDWrXJeWMiNf"><img src="img/Youtube.png" alt="yt" class="social-icon youtube-icon"></a>
+                    <a href="https://wa.me/+62 877-8817-8311"><img src="img/Tiktok.png" alt="tt" class="social-icon tiktok-icon"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Set Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Online Services</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="footer-section links">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="specialoffer.html">Special Offers</a></li>
-          <li><a href="trending.html">Trending</a></li>
-          <li><a href="newrelease.html">New Releases</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section contact">
-        <h2>Contact Us</h2>
-        <p>Email: supportundiknashero.com</p>
-        <p>Phone: +62 895320610788</p>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>&copy; Undiknas Hero. All Rights Reserved.</p>
-    </div>
-  </footer>
+    </footer>
+</body>
 </html>
