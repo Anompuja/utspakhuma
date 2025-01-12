@@ -1,5 +1,5 @@
 <?php  include 'include/header.php'; ?>
-<link rel="stylesheet" href="/utspakhuma/assets/new-releases.css">
+<link rel="stylesheet" href="assets/new-releases.css">
 
 <body>
     <header class="new-releases-header">

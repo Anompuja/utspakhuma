@@ -38,17 +38,17 @@ nav {
   font-weight: bold;
 }
 
-.special-offers-header {
+.trending-header{
   text-align: center;
   padding: 2em;
 }
 
-.special-offers-header h1 {
+.trending-header h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-.special-offers-header p {
+.trending-header p {
   font-size: 1.2em;
   color: #bbb;
 }

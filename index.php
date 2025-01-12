@@ -1,5 +1,7 @@
 <?php  include 'include/header.php'; ?>
-    <link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/style.css" />
+
+<body>
     <section class="slider">
       <div class="slides">
         <img src="img/Black Myth Indra.jpeg" alt="Game 1" />

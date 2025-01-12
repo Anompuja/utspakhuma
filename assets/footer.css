@@ -1,0 +1,96 @@
+footer {
+    background-color: #000000;
+    color: white;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.footer-left h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.footer-left p{
+    font-size: 32px;
+    font-weight: bold ;
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-right {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer-column {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.footer-column li {
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icon{
+    margin-right: 10px;
+}
+
+.instagram-icon {
+    width: 50px; 
+    height: auto; 
+    
+}
+
+.youtube-icon {
+    width: 50px; /* atau ukuran yang sesuai dengan kebutuhan Anda */
+    height: auto; /* Memastikan bahwa rasio aspek ikon tetap terjaga */
+}
+
+.tiktok-icon {
+    width: 50px; /* atau ukuran yang sesuai dengan kebutuhan Anda */
+    height: auto; /* Memastikan bahwa rasio aspek ikon tetap terjaga */
+}
+

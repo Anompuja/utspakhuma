@@ -1,5 +1,5 @@
 <?php  include 'include/header.php'; ?>
-<link rel="stylesheet" href="/utspakhuma/assets/special-offers.css">
+<link rel="stylesheet" href="assets/special-offers.css">
 <header class="special-offers-header">
     <h1>Special Offers</h1>
     <p>Enjoy limited-time deals on your favorite games. Don't miss out!</p>
