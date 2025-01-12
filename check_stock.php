@@ -1,20 +1,19 @@
 <?php
-// Koneksi ke database
-include 'db_connection.php';
+include 'config.php';
 
-// Ambil data game_id dan quantity dari request
+// Ambil data dari request
 $game_id = $_POST['game_id'];
 $quantity = $_POST['quantity'];
 
-// Query untuk memeriksa stok
-$sql = "SELECT stock FROM games WHERE id = ?";
-$stmt = $pdo->prepare($sql);
-$stmt->execute([$game_id]);
-$game = $stmt->fetch();
-
-if ($game && $game['stock'] >= $quantity) {
+// Update stock di database
+try {
+    $stmt = $pdo->prepare("UPDATE games SET stock = stock - :quantity WHERE id = :game_id");
+    $stmt->execute([
+        ':quantity' => $quantity,
+        ':game_id' => $game_id,
+    ]);
     echo json_encode(['success' => true]);
-} else {
-    echo json_encode(['success' => false]);
+} catch (PDOException $e) {
+    echo json_encode(['success' => false, 'error' => $e->getMessage()]);
 }
 ?>

@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+
 
 
 try {
@@ -19,9 +19,9 @@ try {
     $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // Menetapkan mode error PDO menjadi exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    
 } catch (PDOException $e) {
     // Jika terjadi error, tampilkan pesan error
-    echo "Connection failed: " . $e->getMessage();
+    
 }
 ?>

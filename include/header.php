@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="new-releases.css" />
 
     <nav>
-        <div class="logo">Undiknas Hero</div>
+        <div class="logo"><img src="" alt=""></div>
         <ul class="nav-links">
             <li><a href="/utspakhuma/index.php">Home</a></li>
             <li><a href="/utspakhuma/specialoffer.php">Special Offers</a></li>

@@ -1,25 +1,46 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-include 'config.php';
-try {
-    
-    $stmt = $pdo->query("SELECT * FROM games WHERE category_id = 1");  
-    $games = $stmt->fetchAll(PDO::FETCH_ASSOC);
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Releases</title>
+    <link rel="stylesheet" href="assets/new-releases.css" />
 
-    
-    if ($games) {
-        foreach ($games as $game) {
-            echo "<div class='game-card'>";
-            echo "<img src='img/" . $game['image_url'] . "' alt='" . $game['title'] . "' />";
-            echo "<h2>" . $game['title'] . "</h2>";
-            echo "<p>Price: $" . $game['price'] . "</p>";
-            echo "<button class='add-to-cart' data-title='" . $game['title'] . "' data-price='" . $game['price'] . "'>Add to Cart</button>";
-            echo "</div>";
+    <?php
+    include 'config.php';
+    include 'include/header.php';
+
+    try {
+        // Query untuk mengambil semua game
+        $stmt = $pdo->query("SELECT DISTINCT * FROM games"); // DISTINCT untuk menghindari duplikasi
+        $games = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Periksa apakah ada game yang ditemukan
+        if ($games) {
+            echo "<section class='game-grid'>"; // Membuka grid
+            foreach ($games as $game) {
+                if (!empty($game['image_url']) && file_exists('img/' . $game['image_url'])) {
+                    echo "<div class='game-card'>";
+                    echo "<img src='img/" . htmlspecialchars($game['image_url'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($game['title'], ENT_QUOTES, 'UTF-8') . "' />";
+                    echo "<h2>" . htmlspecialchars($game['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
+                    echo "<p>Price: $" . number_format($game['price'], 2) . "</p>";
+                    echo "<button class='add-to-cart' data-title='" . htmlspecialchars($game['title'], ENT_QUOTES, 'UTF-8') . "' data-price='" . number_format($game['price'], 2) . "' data-id='" . $game['id'] . "'>Add to Cart</button>";
+                    echo "</div>";
+                }
+            }
+            echo "</section>"; // Menutup grid
+        } else {
+            echo "<p style='text-align: center; color: #bbb;'>No games found!</p>";
         }
-    } else {
-        echo "No games found!";
+    } catch (PDOException $e) {
+        echo "<p style='color: red; text-align: center;'>Error fetching games: " . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . "</p>";
     }
-} catch (PDOException $e) {
-    echo "Error fetching games: " . $e->getMessage();
-}
-?>
+
+    include 'include/footer.php';
+    ?>
+
+    <script src="assets/new-releases.js"></script>
+    </body>
+
+</html>
