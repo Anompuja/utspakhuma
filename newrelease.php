@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Releases</title>
-    <link rel="stylesheet" href="assets/new-releases.css" />
-
-    <?php
+<?php
     include 'config.php';
     include 'include/header.php';
 
@@ -39,8 +30,8 @@
 
     include 'include/footer.php';
     ?>
-
-    <script src="assets/new-releases.js"></script>
-    </body>
+<link rel="stylesheet" href="assets/new-releases.css" />
+<script src="assets/new-releases.js"></script>
+</body>
 
 </html>

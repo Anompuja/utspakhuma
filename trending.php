@@ -9,10 +9,6 @@ $result = $conn->query($sql);
 
 <link rel="stylesheet" href="/utspakhuma/assets/trending.css">
 
-<header class="trending-header">
-    <h1>Trending Games</h1>
-    <p>Discover the most popular games that players are enjoying right now!</p>
-</header>
 
 <section class="game-grid">
     <?php

@@ -2,7 +2,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Undiknas Gaming Center</title>
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="assets/header.css" />
 
 <body>
     <nav>
@@ -22,12 +22,13 @@
         </div>
         <div class="icon-container">
             <div class="cart-icon">
-                <a href="checkout.html"><img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
+                <a href="/utspakhuma/registrai.php"><img src="img/cart.png" alt="Cart" class="cart-image"
+                        style="width: 40;">
                     <span class="cart-count" onclick="location.href='checkout.html'"><span id="cart-count">0</span>
                         </style></span>
             </div>
             <div class="profile">
-                <a href="/utspakhuma/register.php">
+                <a href="/utspakhuma/regitrasi.php">
                     <img src="img/Profile.png" alt="Profile Icon" style="cursor: pointer; width: 44;">
                 </a>
             </div>

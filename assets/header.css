@@ -3,18 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   align-items: center;
   padding: 1em 2em;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cart-icon {
-  margin-right: 50px;
-}
 .logo {
   font-size: 1.5em;
   font-weight: bold;
@@ -37,24 +35,25 @@ nav {
 
 .icon-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .cart-icon {
   position: relative;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .cart-image {
   width: 24px;
   height: auto;
+  cursor: pointer;
 }
 
 .cart-count {
   position: absolute;
-  top: 50%;
-  right: -10px;
-  transform: translate(50%, -50%);
+  top: -5px;
+  right: -8px;
   background-color: rgb(255, 0, 0);
   color: white;
   border-radius: 50%;
@@ -64,8 +63,13 @@ nav {
   text-align: center;
 }
 
+.profile img {
+  width: 44px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .nav-links a {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }

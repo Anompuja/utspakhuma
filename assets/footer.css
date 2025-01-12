@@ -1,0 +1,109 @@
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.ugc-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.follow-us {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+.social-icon {
+  width: 40px;
+  height: auto;
+}
+
+.footer-right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.footer-column {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #ff5722; /* Added hover color */
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+}
