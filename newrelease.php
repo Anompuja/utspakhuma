@@ -12,13 +12,13 @@
     include 'include/header.php';
 
     try {
-        // Query untuk mengambil semua game
-        $stmt = $pdo->query("SELECT DISTINCT * FROM games"); // DISTINCT untuk menghindari duplikasi
+        
+        $stmt = $pdo->query("SELECT DISTINCT * FROM games"); 
         $games = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        // Periksa apakah ada game yang ditemukan
+        
         if ($games) {
-            echo "<section class='game-grid'>"; // Membuka grid
+            echo "<section class='game-grid'>"; 
             foreach ($games as $game) {
                 if (!empty($game['image_url']) && file_exists('img/' . $game['image_url'])) {
                     echo "<div class='game-card'>";
@@ -29,7 +29,7 @@
                     echo "</div>";
                 }
             }
-            echo "</section>"; // Menutup grid
+            echo "</section>"; 
         } else {
             echo "<p style='text-align: center; color: #bbb;'>No games found!</p>";
         }

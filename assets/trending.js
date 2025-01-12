@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const countdownElements = document.querySelectorAll(".countdown");
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartCountElement = document.getElementById("cart-count");
 
@@ -14,26 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => {
       const title = button.getAttribute("data-title");
       const price = button.getAttribute("data-price");
+      const gameId = button.getAttribute("data-id");
 
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ title, price });
-      localStorage.setItem("cart", JSON.stringify(cart));
+      fetch("check_stock.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: `game_id=${gameId}&quantity=1`,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ title, price, gameId });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
 
-      updateCartCount();
-
-      if (Notification.permission === "granted") {
-        new Notification("Added to Cart", {
-          body: `${title} has been added to your cart.`,
-        });
-      } else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then((permission) => {
-          if (permission === "granted") {
-            new Notification("Added to Cart", {
-              body: `${title} has been added to your cart.`,
-            });
+            alert(`${title} has been added to your cart.`);
+          } else {
+            alert(data.error || "Stock unavailable.");
           }
-        });
-      }
+        })
+        .catch((err) => console.error("Error:", err));
     });
   });
 });
