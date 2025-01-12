@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartCountElement = document.getElementById("cart-count");
 
-  // Update cart count on page load
   updateCartCount();
 
   countdownElements.forEach((countdownEl) => {
-    let timeLeft = 60 * 60 * 23; // Waktu countdown (dalam detik)
+    let timeLeft = 60 * 60 * 23;
 
     const timerInterval = setInterval(() => {
       if (timeLeft <= 0) {
@@ -50,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("cart", JSON.stringify(cart));
             updateCartCount();
 
-            // Tampilkan notifikasi sukses
             alert(`${title} has been added to your cart.`);
           } else {
             alert(data.error || "Stock unavailable.");

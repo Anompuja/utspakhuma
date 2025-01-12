@@ -2,7 +2,7 @@
 include 'include/header.php'; 
 include 'config.php';  
 
-// SQL query to get only trending games from the database
+
 $sql = "SELECT id, title, price, image_url FROM games WHERE title IN ('Until Daylight', 'EA FC 24', 'Elden Ring', 'Fantastap', 'Flinthook', 'God Of War', 'Guildlings')";  
 $result = $conn->query($sql);
 ?>
@@ -18,7 +18,7 @@ $result = $conn->query($sql);
     <?php
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            // Output the game card for each game in the database
+            
             echo '<div class="game-card">';
             echo '<img src="' . $row['image_url'] . '" alt="' . $row['title'] . '" />';  // Image URL from the database
             echo '<h2>' . $row['title'] . '</h2>';
