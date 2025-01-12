@@ -15,11 +15,17 @@
             <li><a href="trending.html">Trending</a></li>
          <li><a href="newrelease.html">New Releases</a></li>
         </ul>
-        <div class="profile">
+        <div class="icon-container">
+            <div class="cart-icon">
+                <img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
+                <span class="cart-count" onclick="location.href='checkout.html'"><span id="cart-count">0</span></style></span>
+            </div>
+        </div>
+             <div class="profile">
             <a href="login.html">
                 <img src="img/Profile.png" alt="Profile Icon" style="cursor: pointer; width: 44;">
-            </a>
-            
+            </a>  
+            </div>
         </div>
     </nav>
   </head>
