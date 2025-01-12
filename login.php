@@ -1,12 +1,12 @@
 <?php
 session_start();
-include 'config.php'; // Database connection file
+include 'config.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
-    // Check if username exists
+    
     $query = $conn->prepare("SELECT id, password FROM user1 WHERE username = ?");
     $query->bind_param("s", $username);
     $query->execute();
@@ -14,12 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $query->fetch();
 
     if ($userId && password_verify($password, $hashedPassword)) {
-        // Login successful
+        
         $_SESSION['user_id'] = $userId;
         $_SESSION['username'] = $username;
         echo "<script>alert('Login successful!'); window.location.href = 'index.php';</script>";
     } else {
-        // Login failed
+        
         echo "<script>alert('Invalid username or password. Please try again.');</script>";
     }
 

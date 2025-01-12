@@ -46,7 +46,7 @@ nav {
 }
 
 .cart-image {
-  width: 24px; /* atau sesuai kebutuhan Anda */
+  width: 24px;
   height: auto;
 }
 
@@ -66,6 +66,6 @@ nav {
 
 @media (max-width: 768px) {
   .nav-links a {
-    font-size: 0.5rem; /* Ukuran font dikurangi */
+    font-size: 0.5rem;
   }
 }
