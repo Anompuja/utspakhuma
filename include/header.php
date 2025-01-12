@@ -17,8 +17,10 @@
         </ul>
         <div class="icon-container">
             <div class="cart-icon">
-                <img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
-                <span class="cart-count" onclick="location.href='checkout.html'"><span id="cart-count">0</span></style></span>
+                <a href="checkout.html">
+                    <img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
+                    <span class="cart-count" onclick="location.href='checkout.html'"><span id="cart-count">0</span></style></span>
+                </a>
             </div>
         </div>
              <div class="profile">
