@@ -22,8 +22,8 @@
         </div>
         <div class="icon-container">
             <div class="cart-icon">
-                <a href="checkout.html"><img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
-                <span class="cart-count" onclick="location.href='checkout.html'"><span id="cart-count">0</span></style></span>
+                <a href="checkout.php"><img src="img/cart.png" alt="Cart" class="cart-image" style="width: 40;">
+                <span class="cart-count" onclick="location.href='checkout.php'"><span id="cart-count">0</span></style></span>
             </div>
              <div class="profile">
                 <a href="login.html">
