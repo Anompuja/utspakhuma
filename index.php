@@ -27,7 +27,7 @@
         <h2>Special Offers</h2>
         <div class="games">
           <div class="game">
-            <img src="img/Black Myth Indra.jpeg" alt="Special Game 1" />
+             <a href="gamepages.php"><img src="img/Black Myth Indra.jpeg" alt="Special Game 1" /></a>
             <p>Black Myth Wukong</p>
           </div>
           <div class="game">
