@@ -9,25 +9,27 @@
 
     <div class="main-content">
             <div class="game-showcase">
-            <img src="\belajar php\I Am Cat di Steam_files\GIF05_chill.gif" alt="vidio games" class="main-image">
+            <video controls autoplay loop muted poster src="/utspakhuma/vid/black Myth wukong.mp4" alt="vidio games" class="main-image" ></video>
             </div>
             <div class="game-info">
-                <img src="img/BELOW by Capy!, via Flickr.jpeg" alt="Logo" style="width: 100%; margin-bottom: 1rem;">
+                <img src="img/kingwukong.jpeg" alt="Logo" style="width: 100%; margin-bottom: 1rem;">
                 <p class="game-description">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                 Black Myth: Wukong is an action role-playing game.It has elements characteristic to the Soulslike subgenre. The game is played in single-player mode from a third-person perspective. The player controls the Destined One, a monkey protagonist based on Sun Wukong from the Journey to the West
+                The protagonist's weapon is a staff, which is based on the Ruyi Jingu Bang from the novel. The staff can extend and shrink in size during combat. The different staff stances—the smash, pillar, and thrust stance—provide versatility in fights The combat mechanics involve resource management. can be accumulated by landing light attacks, executing well-timed dodges, and other means. A focus point is gained when the meter for focus is filled up. These points can be used to initiate heavy attacks. A heavy attack can be executed on its own or as a varied combo, which is triggered during light attacks. Stamina is depleted by sprinting, dodging, and attacking.</p>
                 <div class="info-grid">
                     <span class="info-label">RELEASE DATE:</span>
-                    <span>6 Des 2024</span><br>
+                    <span>August 20, 2024</span><br>
                     <span class="info-label">DEVELOPER:</span>
-                    <span>NEW FOLDER GAMES LTD</span>
+                    <span>Game Science</span><br>
+                    <span class="info-label">GENDRES:</span>
+                    <span>Role Player</span>
                 </div>
             </div>
             <div class="thumbnail-gallery">
-                <img src="img/COD Black Ops 6.jpeg" alt="Screenshot 1" class="thumbnail">
-                <img src="img/COD Black Ops 6.jpeg" alt="Screenshot 2" class="thumbnail">
-                <img src="img/COD Black Ops 6.jpeg" alt="Screenshot 3" class="thumbnail">
-                <img src="img/COD Black Ops 6.jpeg" alt="Screenshot 4" class="thumbnail">
+                <img src="img/wukong1.jpeg" alt="Screenshot 1" class="thumbnail">
+                <img src="img/wukong2.jpeg" alt="Screenshot 2" class="thumbnail">
+                <img src="img/wukong3.jpeg" alt="Screenshot 3" class="thumbnail">
+                <img src="img/wukong4.jpeg" alt="Screenshot 4" class="thumbnail">
             </div>
             <div class="purchase-container">
                 <div class="game-title">Beli I Am Cat - The Whole Kitten Caboodle</div>
